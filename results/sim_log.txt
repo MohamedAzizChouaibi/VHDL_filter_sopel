@@ -1,0 +1,9 @@
+=== Sobel HDL testbench ===
+image             : /home/shuayb/cos/sobel/images/input.pgm (64x64)
+seuil / trous     : 100 / 20%
+cycles simulés    : 5071
+latence 1er pixel : 161 cycles
+pixels émis       : 3844 (attendu 3844)
+manquants/doublons: 0 / 0
+écarts vs modèle  : 0
+RESULTAT          : PASS

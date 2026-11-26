@@ -1,0 +1,48 @@
+{
+  "hdl_vs_numpy_full": {
+    "identical_pixels": 4096,
+    "total_pixels": 4096,
+    "match_percent": 100.0,
+    "max_abs_diff": 0,
+    "mean_abs_diff": 0.0,
+    "mse": 0.0,
+    "psnr_db": "inf"
+  },
+  "hdl_vs_opencv_L1_interior": {
+    "identical_pixels": 3844,
+    "total_pixels": 3844,
+    "match_percent": 100.0,
+    "max_abs_diff": 0,
+    "mean_abs_diff": 0.0,
+    "mse": 0.0,
+    "psnr_db": "inf"
+  },
+  "hdl_vs_opencv_L1_full_image": {
+    "identical_pixels": 3846,
+    "total_pixels": 4096,
+    "match_percent": 93.896,
+    "max_abs_diff": 68,
+    "mean_abs_diff": 1.1802,
+    "mse": 29.4131,
+    "psnr_db": 33.45
+  },
+  "hdl_vs_opencv_L2_interior": {
+    "identical_pixels": 861,
+    "total_pixels": 3844,
+    "match_percent": 22.399,
+    "max_abs_diff": 74,
+    "mean_abs_diff": 4.8897,
+    "mse": 112.5525,
+    "psnr_db": 27.62
+  },
+  "edges_hdl_vs_opencv_interior": {
+    "identical_pixels": 3844,
+    "total_pixels": 3844,
+    "match_percent": 100.0,
+    "max_abs_diff": 0,
+    "mean_abs_diff": 0.0,
+    "mse": 0.0,
+    "psnr_db": "inf"
+  },
+  "threshold": 100
+}

@@ -1,0 +1,43 @@
+[*] GTKWave save file — Mini-projet 3 Sobel
+[dumpfile] "results/sobel.vcd"
+[timestart] 250
+[size] 1600 800
+@28
+TOP.sobel_top.clk
+TOP.sobel_top.rst
+TOP.sobel_top.in_valid
+@24
+TOP.sobel_top.in_pixel[7:0]
+TOP.sobel_top.col[5:0]
+TOP.sobel_top.row[5:0]
+@200
+-Fenetre 3x3
+@24
+TOP.sobel_top.w00[7:0]
+TOP.sobel_top.w01[7:0]
+TOP.sobel_top.w02[7:0]
+TOP.sobel_top.w10[7:0]
+TOP.sobel_top.w12[7:0]
+TOP.sobel_top.w20[7:0]
+TOP.sobel_top.w21[7:0]
+TOP.sobel_top.w22[7:0]
+@28
+TOP.sobel_top.win_valid
+@200
+-Noyau Sobel
+@424
+TOP.sobel_top.u_kernel.gx_s1[10:0]
+TOP.sobel_top.u_kernel.gy_s1[10:0]
+@24
+TOP.sobel_top.u_kernel.sum[11:0]
+@200
+-Sortie
+@28
+TOP.sobel_top.out_valid
+@24
+TOP.sobel_top.out_x[5:0]
+TOP.sobel_top.out_y[5:0]
+TOP.sobel_top.out_pixel[7:0]
+@28
+TOP.sobel_top.out_edge
+TOP.sobel_top.frame_done
