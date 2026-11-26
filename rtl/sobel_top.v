@@ -18,7 +18,8 @@ module sobel_top #(
     parameter integer WIDTH  = 64,
     parameter integer HEIGHT = 64,
     parameter integer DW     = 8,
-    parameter integer AW     = 6     // log2(WIDTH), et log2(HEIGHT)
+    // largeur des compteurs : ceil(log2(max(WIDTH, HEIGHT))) -> 6 pour 64x64
+    parameter integer AW     = $clog2(WIDTH > HEIGHT ? WIDTH : HEIGHT)
 ) (
     input  wire          clk,
     input  wire          rst,

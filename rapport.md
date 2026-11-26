@@ -123,5 +123,5 @@ make IMAGE=photo.jpg THRESH=80 GAP=0   # autre image, autre seuil, flux continu
 - **Gestion des bords :** répliquer les pixels de bord dans la fenêtre (multiplexeurs sur les colonnes et lignes extrêmes) pour obtenir une image 64×64 complète, identique à `BORDER_REPLICATE`.
 - **Magnitude L2 :** l'approcher par `max + min/2` ou par un CORDIC pour se rapprocher de `sqrt(Gx² + Gy²)`.
 - **Interface standard :** passer à AXI4-Stream (`tready`, `tlast`, `tuser`) pour gérer la contre-pression et s'intégrer dans un SoC.
-- **Résolution paramétrable :** le code est déjà paramétré (`WIDTH`, `HEIGHT`, `AW`), donc il suffit de modifier les paramètres pour traiter du 640×480.
+- **Résolution paramétrable :** le code est paramétré (`WIDTH`, `HEIGHT`, et `AW` déduit par `$clog2`). Le test caméra (`make live`) l'utilise déjà en 160×120 et reste identique bit à bit à OpenCV sur chaque image.
 - **Synthèse FPGA :** la synthèse (Yosys ou Vivado) permettrait de mesurer la fréquence maximale et les ressources réellement utilisées.

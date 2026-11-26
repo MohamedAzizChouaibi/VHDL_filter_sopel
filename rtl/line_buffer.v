@@ -11,7 +11,7 @@
 module line_buffer #(
     parameter integer WIDTH = 64,   // pixels par ligne
     parameter integer DW    = 8,    // bits par pixel
-    parameter integer AW    = 6     // log2(WIDTH)
+    parameter integer AW    = $clog2(WIDTH)
 ) (
     input  wire          clk,
     input  wire          en,        // pixel d'entrée valide
